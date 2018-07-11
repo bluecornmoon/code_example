@@ -6,9 +6,6 @@ unsigned char xx[4];
 
 int function_a(char buf)
 {
-
-
-
     return 1;
 }
 

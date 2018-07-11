@@ -10,8 +10,6 @@ int pointer_test(char *a, int *b, int *data)
 
     *b = *a;
 
-
-
     printf("function data:%x\n", *data);
 
 }

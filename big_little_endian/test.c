@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <endian.h>
+
 
 void show_mem_rep (char *start, int n)
 {
@@ -24,6 +26,8 @@ int main ()
         printf("Little endian\n");
     else 
         printf("Big Endian\n");
+
+    printf("i addr: %p, c addr: %p\n", &i, c);
 
 
 
