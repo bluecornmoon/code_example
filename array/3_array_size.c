@@ -1,6 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+/* 
+ * sizeof of array: 28
+ * sizeof of parameter: 8
+ * Length of array: 7
+ * Length of parameter: 2
+*/
+
+
 void printSizeOf(int intArray[]);
 void printLength(int intArray[]);
 

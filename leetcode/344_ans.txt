@@ -1,0 +1,17 @@
+char* reverseString(char* s) {
+    int s_len = 0;
+    int x, y;
+    char temp;
+    
+    s_len = strlen(s);
+    y = s_len - 1;
+    
+    for (x = 0; x < s_len/2; x++) {
+        temp = s[x];
+        s[x] = s[y];
+        s[y] = temp;
+        y--;
+    }
+        
+    return s;
+}
