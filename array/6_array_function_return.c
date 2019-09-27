@@ -1,21 +1,20 @@
 #include <stdio.h>
+#include <string.h>
 
 
 char *array_func (char * a)
 {
-    char array[] = "Hello";
 
-    a = array;
- 
-    printf("a: %s\n", a);
+    printf("a: %lu\n", sizeof(a));
+    printf("a: %lu\n", strlen(a));
 
-    return array;
+    return a;
 }
 
 
 int main(void)
 {
-    char *a;
+    char *a = "abc";
     char *b;
 
     b = array_func(a);

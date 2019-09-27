@@ -1,6 +1,22 @@
 #include <stdio.h>
 #include <string.h>
 
+/* 
+strlen a: 5, b: 5
+sizeof a: 6, b: 8
+Address a: 0x7fff5264cb36, 0x7fff5264cb37
+Address b: 0x10d5b3f0a, 0x10d5b3f0b
+a: Heflo
+c: 1
+*c+1: 2
+*(c+1): 2
+sizeof: 4
+d: 1
+*d+1: 2
+*(d+1): 2
+sizeof: 8
+*/
+
 
 int main(void)
 {

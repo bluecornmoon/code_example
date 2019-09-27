@@ -1,5 +1,16 @@
 #include <stdio.h>
 
+/*
+a: 0x7fff5cecdb38
+b: 0x7fff5cecdb34
+f: 0x7fff5cecdb30
+a: 0x7fff5cecdb34
+value a: 0x7fff5cecdb30
+cannot a: 0x7fff5cecdb34
+value a: 0x7fff5cecdb28
+can a: 0x7fff5cecdb30
+*/
+
 
 void cannot_change (int *x, int *z) 
 {
@@ -33,7 +44,7 @@ int main()
     printf("f: %p\n", f);
 
     a = b;
-    printf("a: %p\n", a);
+    printf("a=b: %p\n", a);
 
     cannot_change(a, f);
     printf("cannot a: %p\n", a);

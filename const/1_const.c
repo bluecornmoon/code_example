@@ -10,5 +10,7 @@ int main ()
     a = 10 + 1;
     printf("a: %d\n", *b);
 
+    *b = 12;
+    printf("b: %d\n", *b);
 
 }

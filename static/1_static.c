@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 int a(void) 
 {
     int result = 0;
@@ -9,8 +10,8 @@ int a(void)
 
 int b(void)
 {
-    static int result = 0;
 
+    static int result = 0;
     return result++;
 }
 

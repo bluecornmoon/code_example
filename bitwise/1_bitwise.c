@@ -21,7 +21,12 @@ int main(void) {
 
     puts("NOT運算：");
     printf("NOT 0\t\t%d\n", !0);
-    printf("NOT 1\t\t%d\n\n", !1);
+    printf("NOT 1\t\t%d\n", !1);
+    printf("NOT 0x1010\t\t%x\n\n", !0x1010);
+
+
+    puts("~~~運算：");
+    printf("~~~~~1010: \t\t%x\n", ~0x1010);
 
     return 0;
 }

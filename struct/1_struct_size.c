@@ -17,6 +17,17 @@ typedef struct bb_ {
     unsigned int e;
 } bb;
 
+typedef struct small_s {
+    int x;
+    int y;
+} small;
+
+struct small_s array_c[] = {
+    {1, 2},
+    {1, 2},
+    {1, 2},
+};
+
 int main () {
 
     aa xx;
@@ -31,6 +42,8 @@ int main () {
     printf("d %x, e %x\n", (unsigned int)&yy->d, (unsigned int)&yy->e);
 
     printf("Size of: %d\n", sizeof(bb));
+
+    printf("size of array c: %d\n", sizeof(array_c));
 
     return 1;
 

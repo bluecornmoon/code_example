@@ -1,11 +1,16 @@
 #include <stdio.h>
 
+/*
+5, ffffffff
+0x7fff52120b38, 0x7fff52120b39
+*/
+
 typedef struct test_ {
     char a;
     char b;
 } test;
 
-void main ()
+int main ()
 {
     test ker;
     char *address;
@@ -19,5 +24,7 @@ void main ()
 
     printf("%x, %x\n", ker.a, *address);
     printf("%p, %p\n", &ker.a, address);
+
+    return 0;
 
 }
